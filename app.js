@@ -1,17 +1,17 @@
 const express = require('express')
 const app = express()
-const port =  process.env.PORT || 3000
+const port = process.env.PORT || 3000
 
 //Database Connection
-// const mongoose = require('mongoose')
-// const user = "teste"
-// const password = "wchjIV1KFR3jax8H"
-// const dbname = "petshop"
-// const uri = `mongodb+srv://${user}:${password}@cluster0.ycrkdr4.mongodb.net/${dbname}?retryWrites=true&w=majority&appName=Cluster0"`
+const mongoose = require('mongoose')
+const user = "teste"
+const password = "wchjIV1KFR3jax8H"
+const dbname = "petshop"
+const uri = `mongodb+srv://${user}:${password}@cluster0.ycrkdr4.mongodb.net/${dbname}?retryWrites=true&w=majority&appName=Cluster0"`
 
-// mongoose.connect(uri)
-// .then(() => console.log("Connection Sucessful"))
-// .catch(e => console.log(e))
+mongoose.connect(uri)
+.then(() => console.log("Connection Sucessful"))
+.catch(e => console.log(e))
 
 
 
