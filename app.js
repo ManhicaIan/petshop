@@ -3,10 +3,9 @@ const app = express()
 const port =  process.env.PORT || 3000
 
 //Database Connection
-
 const mongoose = require('mongoose')
 const user = "teste"
-const password = "gI0L5imSAbgbMOY8"
+const password = "sRsLYNrr7nnHj32N"
 const dbname = "petshop"
 const uri = `mongodb+srv://${user}:${password}@cluster0.ycrkdr4.mongodb.net/${dbname}?retryWrites=true&w=majority&appName=Cluster0"`
 
