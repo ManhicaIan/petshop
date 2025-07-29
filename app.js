@@ -3,6 +3,7 @@ const app = express()
 const port =  process.env.PORT || 3000
 
 //Database Connection
+/*
 const mongoose = require('mongoose')
 const user = "teste"
 const password = "gI0L5imSAbgbMOY8"
@@ -12,7 +13,7 @@ const uri = `mongodb+srv://${user}:${password}@cluster0.ycrkdr4.mongodb.net/${db
 mongoose.connect(uri)
 .then(() => console.log("Connection Sucessful"))
 .catch(e => console.log(e))
-
+*/
 
 
 //EJS config
