@@ -1,0 +1,29 @@
+<%- include('templates/header', {titulo: 'Pets'}) %>
+
+<h1>Pets</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% if (petArray.length > 0) { %>
+      <% petArray.forEach(pet => { %>
+         <tr>
+          <th scope="row"><%= pet.id %></th>
+          <td><%= pet.name %></td>
+          <td><%= pet.description %></td>
+          <td>@mdo</td>
+        </tr>
+      <% }) %>
+    <% } %>
+
+  </tbody>
+</table>
+
+<%- include('templates/footer') %>
